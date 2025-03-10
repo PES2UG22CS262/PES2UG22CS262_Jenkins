@@ -1,3 +1,7 @@
+Share
+
+User
+You said:
 pipeline {
     agent any
 
@@ -13,7 +17,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running Tests'
-                sh './hello_wrong'  // Intentional error: incorrect executable name
+                sh './hello'
                 echo 'Test Stage Successful'
             }
             post {
