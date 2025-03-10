@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running Tests'
-                sh './hello'
+                sh './hello_wrong'  // Intentional error: incorrect executable name
                 echo 'Test Stage Successful'
             }
             post {
